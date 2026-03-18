@@ -7,7 +7,9 @@
   packages = [
     pkgs.nodejs_22
     pkgs.python3
-  ];
+    pkgs.git
+    pkgs.javaPackages.compiler.temurin-bin.jre-8
+];
   # Sets environment variables in the workspace
   env = {};
   idx = {
@@ -15,6 +17,10 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "yseop.vscode-yseopml"
+      "formulahendry.auto-rename-tag"
+      "formulahendry.auto-close-tag"
+      "ms-vscode.azurecli"
     ];
     # Enable previews and customize configuration
     previews = {
