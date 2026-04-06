@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let shipBottom = 250;
   let gravity = 2.5;
   let isGameOver = false;
-  let score = 0;
+  let score = 0; // test
   let speed = 2;
 
   function startGame() {
